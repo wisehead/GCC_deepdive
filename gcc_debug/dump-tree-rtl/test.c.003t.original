@@ -1,0 +1,32 @@
+
+;; Function __sputc (null)
+;; enabled by -tree-original
+
+
+{
+  if ( --_p->_w >= 0 || _p->_w >= _p->_lbfsize && (signed char) _c != 10)
+    {
+      return (int) (*_p->_p++  = (unsigned char) _c);
+    }
+  else
+    {
+      return __swbuf (_c, _p);
+    }
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int i = 0;
+  int sum = 0;
+
+    int i = 0;
+    int sum = 0;
+  sum = sum + i;
+  return sum;
+}
+return 0;
+

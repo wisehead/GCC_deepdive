@@ -1,0 +1,37 @@
+
+;; Function main (main, funcdef_no=1, decl_uid=2397, cgraph_uid=1, symbol_order=1)
+
+
+Analyzing function body size: main
+
+IPA function summary for main/1
+  global time:     3.000000
+  self size:       4
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:3.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+
+main ()
+{
+  int sum;
+  int i;
+  int D.2402;
+  int _4;
+
+  <bb 2> :
+  i_1 = 0;
+  sum_2 = 0;
+  sum_3 = sum_2 + i_1;
+  _4 = sum_3;
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+

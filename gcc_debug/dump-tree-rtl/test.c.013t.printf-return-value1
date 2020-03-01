@@ -1,0 +1,22 @@
+
+;; Function main (main, funcdef_no=1, decl_uid=2397, cgraph_uid=1, symbol_order=1)
+
+main ()
+{
+  int sum;
+  int i;
+  int D.2402;
+
+  <bb 2> :
+  i = 0;
+  sum = 0;
+  sum = sum + i;
+  D.2402 = sum;
+
+  <bb 3> :
+<L0>:
+  return D.2402;
+
+}
+
+

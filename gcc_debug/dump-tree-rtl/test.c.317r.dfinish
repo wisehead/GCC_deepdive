@@ -1,0 +1,61 @@
+
+;; Function main (main, funcdef_no=1, decl_uid=2397, cgraph_uid=1, symbol_order=1)
+
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 20 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 20 3 21 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (reg/f:DI 6 bp)) "test.c":11 61 {*pushdi2_rex64}
+     (nil))
+(insn/f 21 20 22 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) "test.c":11 85 {*movdi_internal}
+     (nil))
+(insn 22 21 23 2 (set (mem/v:BLK (scratch:DI) [0  A8])
+        (unspec:BLK [
+                (mem/v:BLK (scratch:DI) [0  A8])
+            ] UNSPEC_MEMORY_BLOCKAGE)) "test.c":11 709 {*memory_blockage}
+     (nil))
+(note 23 22 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 23 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                (const_int -4 [0xfffffffffffffffc])) [1 i+0 S4 A32])
+        (const_int 0 [0])) "test.c":12 86 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [1 sum+0 S4 A32])
+        (const_int 0 [0])) "test.c":12 86 {*movsi_internal}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 0 ax [89])
+        (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                (const_int -4 [0xfffffffffffffffc])) [1 i+0 S4 A32])) "test.c":13 86 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                        (const_int -8 [0xfffffffffffffff8])) [1 sum+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                            (const_int -8 [0xfffffffffffffff8])) [1 sum+0 S4 A32])
+                    (reg:SI 0 ax [89])))
+            (clobber (reg:CC 17 flags))
+        ]) "test.c":13 221 {*addsi_1}
+     (nil))
+(insn 9 8 17 2 (set (reg:SI 0 ax [orig:87 _4 ] [87])
+        (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [1 sum+0 S4 A32])) "test.c":14 86 {*movsi_internal}
+     (nil))
+(insn 17 9 24 2 (use (reg/i:SI 0 ax)) "test.c":15 -1
+     (nil))
+(note 24 17 25 2 NOTE_INSN_EPILOGUE_BEG)
+(insn 25 24 26 2 (set (mem/v:BLK (scratch:DI) [0  A8])
+        (unspec:BLK [
+                (mem/v:BLK (scratch:DI) [0  A8])
+            ] UNSPEC_MEMORY_BLOCKAGE)) "test.c":15 709 {*memory_blockage}
+     (nil))
+(insn/f 26 25 27 2 (set (reg/f:DI 6 bp)
+        (mem:DI (post_inc:DI (reg/f:DI 7 sp)) [0  S8 A8])) "test.c":15 71 {*popdi1}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn 27 26 28 2 (simple_return) "test.c":15 711 {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 28 27 19)
+(note 19 28 0 NOTE_INSN_DELETED)
