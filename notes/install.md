@@ -8,6 +8,11 @@ https://github.com/gcc-mirror/gcc
 ##1.3 wget
 wget -c http://mirror1.baby1on.network/gcc/releases/gcc-4.4.0/gcc-4.4.0.tar.bz2
 
+##1.4 gcc4.4.6源码下载
+https://ftp.gnu.org/gnu/gcc/gcc-4.4.6/
+
+##1.5 已有安装的版本是gcc82
+/home/opt/compiler/gcc-8.2/bin/gcc
 
 #2.依赖
 ![](res/gcc_download.png)
@@ -19,36 +24,31 @@ wget -c http://mirror1.baby1on.network/gcc/releases/gcc-4.4.0/gcc-4.4.0.tar.bz2
 #3.安装及错误解决
 
 ```bash
-//1、解压gcc
-$tar -jxvf gcc-4.8.2.tar.bz2
-$cd gcc-4.8.2
+（1）、解压gcc
+$tar -zxvf gcc-4.4.6.tar.gz
  
-//2、解压安装gmp
+（2）、解压安装gmp
 $tar -jxvf gmp-4.3.2.tar.bz2
 $cd gmp-4.3.2
-$./configure --prefix=/usr/local/gmp-4.3.2 //gmp安装路径
-$./configure --prefix=/home/chenhui/bin/gmp-4.3.2 //gmp安装路径
+$./configure --prefix=/home/chenhui2/bin/gmp-4.3.2 //gmp安装路径
 $make
-$make check
+$make check//会有一个case通不过，不过没事，不理会。
 $sudo make install
  
-//3、解压安装mpfr
+（3）、解压安装mpfr
 $tar -jxvf mpfr-2.4.2.tar.bz2
 $cd mpfr-2.4.2
 //congfigure后面是mpfr安装路径及依赖的gmp路径
-$configure --prefix=/usr/local/mpfr-2.4.2 --with-gmp=/usr/local/gmp-4.3.2
-./configure --prefix=/home/chenhui/bin/mpfr-2.4.2 --with-gmp=/home/chenhui/bin/gmp-4.3.2
+$./configure --prefix=/home/chenhui2/bin/mpfr-2.4.2 --with-gmp=/home/chenhui2/bin/gmp-4.3.2
 $make
 $make check
 $sudo make install
  
-//4、解压安装mpc
+（4）、解压安装mpc
 $tar -zxvf mpc-0.8.1.tar.gz
 $cd mpc-0.8.1
 //congfigure后面是mpc安装路径及依赖的gmp和mpfr路径
-$configure --prefix=/usr/local/mpc-0.8.1
---with-gmp=/usr/local/gmp-4.3.2 --with-mpfr=/usr/local/mpfr-2.4.2
-./configure --prefix=/home/chenhui/bin/mpc-0.8.1 --with-gmp=/home/chenhui/bin/gmp-4.3.2 --with-mpfr=/home/chenhui/bin/mpfr-2.4.2
+$./configure --prefix=/home/chenhui2/bin/mpc-0.8.1 --with-gmp=/home/chenhui2/bin/gmp-4.3.2 --with-mpfr=/home/chenhui2/bin/mpfr-2.4.2
 $make
 $make check
 $sudo make install
@@ -61,20 +61,15 @@ gcc error while loading shared libraries: libmpc.so.2:
 cannot open shared object file:No such file or directory
 //===============================================================================
  
-//5、配置库路径
+（5）、配置库路径
  
 #vi /etc/profile  //向/etc/profile文件末尾添加下面的语句（root权限下）：
  
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/gmp-4.3.2/lib:
-/usr/local/mpfr-2.4.2/lib:/usr/local/mpc-0.8.1/lib
- 
-#source /etc/profile //使其立即生效
- 
-#echo $LD_LIBRARY_PATH //查看配置是否成功
- 
-/usr/local/gmp-4.3.2/lib:/usr/local/mpfr-2.4.2/lib:/usr/local/mpc-0.8.1/lib //显示这个表示成功
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/chenhui2/bin/gmp-4.3.2/lib:
+/home/chenhui2/bin/mpfr-2.4.2/lib:/home/chenhui2/bin/mpc-0.8.1/lib
  
  
+ //下面的流程可忽略
 #vi /etc/ld.so.conf //编辑这个文件，添加下面路径
  
 /usr/local/mpc-0.8.1/lib
@@ -85,45 +80,43 @@ $sudo ldconfig
  
  
  
-//6、安装gcc
-$./configure --prefix=/usr/local/gcc4.8.2 --enable-threads=posix --disable-checking --disable-multilib 
---enable-languages=c,c++ --with-gmp=/usr/local/gmp-4.3.2 --with-mpfr=/usr/local/mpfr-2.4.2 --with-mpc=/usr/local/mpc-0.8.1
- ./configure --prefix=/home/chenhui/bin/gcc44 --with-gmp=/home/chenhui/bin/gmp-4.3.2 --with-mpfr=/home/chenhui/bin/mpfr-2.4.2 --with-mpc=/home/chenhui/bin/mpc-0.8.1
- 
- ./configure --prefix=/home/chenhui/bin/gcc44 --enable-threads=posix --disable-checking --disable-multilib   --enable-languages=c,c++ --with-gmp=/home/chenhui/bin/gmp-4.3.2 --with-mpfr=/home/chenhui/bin/mpfr-2.4.2 --with-mpc=/home/chenhui/bin/mpc-0.8.1
+（6）、安装gcc
+$./configure --prefix=/home/chenhui2/bin/gcc446 --with-gmp=/home/chenhui2/bin/gmp-4.3.2 --with-mpfr=/home/chenhui2/bin/mpfr-2.4.2 --with-mpc=/home/chenhui2/bin/mpc-0.8.1 --enable-language=c,c++
  
 $make
 $sudo make install
- 
-//7、配置gcc
-#vi /etc/profile  //向/etc/profile文件末尾添加下面的语句（root权限下）：
- 
-export PATH=$PATH:/usr/local/gcc4.8.2
- 
-#source /etc/profile //使其立即生效
- 
-#rm /usr/bin/gcc    //删除旧的软连接
-#ln -s /usr/local/gcc4.8.2/bin/gcc /usr/bin/gcc  //使新版本建立软连接
- 
-//下面的同理
-#rm /usr/bin/g++
-#ln -s /usr/local/gcc4.8.2/bin/g++ /usr/bin/g++
-```
- 
-/ssd1/chenhui3/dbpath/lib/mysql:/ssd1/chenhui3/dbpath/lib/private:/home/chenhui3/.jumbo/lib:/home/chenhui3/mysql-8018-trunk/release/library_output_directory:
+（7）问题：stubs-32.h
+/usr/include/gnu/stubs.h:7:27: fatal error: gnu/stubs-32.h: No such file or directory
+###缺少头文件， yum provides命令查询哪个组件可以提供头文件
 
-/home/chenhui3/bin/gmp-4.3.2/lib:
-/home/chenhui3/bin/mpfr-2.4.2/lib:
-/home/chenhui3/bin/mpc-0.8.1/lib
+[root@localhost test]# yum provides */stubs-32.h
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirrors.aliyun.com
+ * extras: mirrors.aliyun.com
+ * updates: mirrors.163.com
+glibc-devel-2.17-292.el7.i686 : Object files for development using standard C
+                              : libraries.
+Repo        : base
+Matched from:
+Filename    : /usr/include/gnu/stubs-32.h
 
 
-./configure --prefix=/home/chenhui3/bin/gcc44 --enable-threads=posix --disable-checking --disable-multilib   
---enable-languages=c,c++ --with-gmp=/home/chenhui3/bin/gmp-4.3.2 --with-mpfr=/home/chenhui3/bin/mpfr-2.4.2 --with-mpc=/home/chenhui3/bin/mpc-0.8.1 
+[root@localhost test]# yum install -y glibc-devel-2.17-292.el7.i686
 
+（8）问题：CentOS 6.5下安装gcc-4.8.4 make的时候提示以下错误：
+configure: error: cannot compute suffix of object files: cannot compile
 
+解决办法：
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/gcc-4.6.3/mpc-0.9/mpc_install/lib:/opt/gcc-4.6.3/gmp-5.0.4/gmp_install/lib:/opt/gcc-4.6.3/mpfr-3.1.0/mpfr_install/lib
 
-1.root安装
-2.目录不对
-3.版本不对
-4.用其它的版本重新装一下
-5.LD_LIBRARY_PATH
+（9）问题：error: redefinition of ‘exact_log2’
+修改Makefile
+CC = gcc -fgnu89-inline
+CXX = g++ -fgnu89-inline
+
+修改configure参数也可以
+CFLAGS='-fgnu89-inline -g -O2' CXXFLAGS='-fgnu89-inline -g -O2'
+
+``` 
+ 
