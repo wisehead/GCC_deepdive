@@ -1,0 +1,40 @@
+
+;; Function main (main, funcdef_no=1, decl_uid=2397, cgraph_uid=1, symbol_order=1)
+
+
+Pass statistics of "omplower": ----------------
+
+
+Pass statistics of "omplower": ----------------
+
+main ()
+{
+  intD.6 D.2403;
+
+  {
+    unsigned intD.9 aD.2399;
+    floatD.29 dD.2400;
+    charD.7 nameD.2401[18];
+
+    try
+      {
+        aD.2399 = 123456;
+        dD.2400 = 1.014531993865966796875e+1;
+        nameD.2401 = "This is a string.";
+        _1 = (doubleD.30) dD.2400;
+        # USE = anything 
+        # CLB = anything 
+        printfD.932 ("a=%d, d=%f,  name=%s\n", aD.2399, _1, &nameD.2401);
+        D.2403 = 0;
+        return D.2403;
+      }
+    finally
+      {
+        nameD.2401 = {CLOBBER};
+      }
+  }
+  D.2403 = 0;
+  return D.2403;
+}
+
+

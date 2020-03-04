@@ -1,0 +1,1 @@
+gcc -g -da -dv -fdump-tree-original-raw -fdump-tree-all-all  test.c
