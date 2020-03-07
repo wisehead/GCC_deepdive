@@ -1,0 +1,88 @@
+@1      function_decl    name: @2       type: @3       srcp: test.c:1      
+                         args: @4       link: extern   body: @5      
+@2      identifier_node  strg: main     lngt: 4       
+@3      function_type    size: @6       algn: 8        retn: @7      
+                         prms: @8      
+@4      parm_decl        name: @9       type: @7       scpe: @1      
+                         srcp: test.c:1                chan: @10     
+                         argt: @7       size: @11      algn: 32      
+                         used: 0       
+@5      bind_expr        type: @12      vars: @13      body: @14     
+@6      integer_cst      type: @15      low : 8       
+@7      integer_type     name: @16      size: @11      algn: 32      
+                         prec: 32       sign: signed   min : @17     
+                         max : @18     
+@8      tree_list        valu: @7       chan: @19     
+@9      identifier_node  strg: argc     lngt: 4       
+@10     parm_decl        name: @20      type: @21      scpe: @1      
+                         srcp: test.c:1                argt: @21     
+                         size: @22      algn: 64       used: 0       
+@11     integer_cst      type: @15      low : 32      
+@12     void_type        name: @23      algn: 8       
+@13     var_decl         name: @24      type: @7       scpe: @1      
+                         srcp: test.c:3                chan: @25     
+                         init: @26      size: @11      algn: 32      
+                         used: 1       
+@14     statement_list   0   : @27      1   : @28      2   : @29     
+                         3   : @30      4   : @31      5   : @32     
+                         6   : @33      7   : @34      8   : @35     
+                         9   : @36      10  : @37     
+@15     integer_type     name: @38      size: @22      algn: 64      
+                         prec: 64       sign: unsigned min : @39     
+                         max : @40     
+@16     type_decl        name: @41      type: @7       srcp: <built-in>:0      
+@17     integer_cst      type: @7       high: -1       low : -2147483648 
+@18     integer_cst      type: @7       low : 2147483647 
+@19     tree_list        valu: @21      chan: @42     
+@20     identifier_node  strg: argv     lngt: 4       
+@21     pointer_type     size: @22      algn: 64       ptd : @43     
+@22     integer_cst      type: @15      low : 64      
+@23     type_decl        name: @44      type: @12      srcp: <built-in>:0      
+@24     identifier_node  strg: i        lngt: 1       
+@25     var_decl         name: @45      type: @7       scpe: @1      
+                         srcp: test.c:4                init: @26     
+                         size: @11      algn: 32       used: 1       
+@26     integer_cst      type: @7       low : 0       
+@27     decl_expr        type: @12     
+@28     decl_expr        type: @12     
+@29     modify_expr      type: @7       op0: @13      op1: @26     
+@30     goto_expr        type: @12      labl: @46     
+@31     label_expr       type: @12      name: @47     
+@32     modify_expr      type: @7       op0: @25      op1: @48     
+@33     postincrement_expr type: @7       op0: @13      op1: @49     
+@34     label_expr       type: @12      name: @46     
+@35     cond_expr        type: @12      op0: @50      op1: @51     
+                         op2: @52     
+@36     label_expr       type: @12      name: @53     
+@37     return_expr      type: @12      expr: @54     
+@38     identifier_node  strg: bit_size_type           lngt: 13      
+@39     integer_cst      type: @15      low : 0       
+@40     integer_cst      type: @15      low : -1      
+@41     identifier_node  strg: int      lngt: 3       
+@42     tree_list        valu: @12     
+@43     pointer_type     size: @22      algn: 64       ptd : @55     
+@44     identifier_node  strg: void     lngt: 4       
+@45     identifier_node  strg: sum      lngt: 3       
+@46     label_decl       type: @12      scpe: @1       srcp: test.c:8      
+                         note: artificial 
+@47     label_decl       type: @12      scpe: @1       srcp: test.c:8      
+                         note: artificial 
+@48     plus_expr        type: @7       op0: @25      op1: @13     
+@49     integer_cst      type: @7       low : 1       
+@50     le_expr          type: @7       op0: @13      op1: @56     
+@51     goto_expr        type: @12      labl: @47     
+@52     goto_expr        type: @12      labl: @53     
+@53     label_decl       type: @12      scpe: @1       srcp: test.c:8      
+                         note: artificial 
+@54     modify_expr      type: @7       op0: @57      op1: @25     
+@55     integer_type     name: @58      size: @6       algn: 8       
+                         prec: 8        sign: signed   min : @59     
+                         max : @60     
+@56     integer_cst      type: @7       low : 9       
+@57     result_decl      type: @7       scpe: @1       srcp: test.c:2      
+                         note: artificial              size: @11     
+                         algn: 32      
+@58     type_decl        name: @61      type: @55      srcp: <built-in>:0      
+@59     integer_cst      type: @55      high: -1       low : -128    
+@60     integer_cst      type: @55      low : 127     
+@61     identifier_node  strg: char     lngt: 4       
