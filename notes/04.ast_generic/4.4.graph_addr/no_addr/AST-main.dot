@@ -1,0 +1,286 @@
+digraph G {
+ node [shape = record]; 1 [label = "{1 | {function_decl | name  | type  | link:extern}}"];
+
+ 1:name -> 2;
+ 1:type -> 3;
+ 2 [label = "{2 | {identifier_node | strg:main}}"];
+
+ 3 [label = "{3 | {function_type | unql  | size  | algn:8}}"];
+
+ 3:unql -> 5;
+ 3:size -> 6;
+ 4 [label = "{4 | {bind_expr | type  | vars }}"];
+
+ 4:type -> 8;
+ 4:vars -> 9;
+ 5 [label = "{5 | {function_type | size  | algn:8}}"];
+
+ 5:size -> 6;
+ 6 [label = "{6 | {integer_cst | type }}"];
+
+ 6:type -> 11;
+ 7 [label = "{7 | {integer_type | name  | size  | algn:32 | prec:32 | sign:signed | min }}"];
+
+ 7:name -> 12;
+ 7:size -> 13;
+ 7:min -> 14;
+ 8 [label = "{8 | {void_type | name }}"];
+
+ 8:name -> 16;
+ 9 [label = "{9 | {var_decl | name  | type  | scpe  | chan  | init  | size  | algn:32}}"];
+
+ 9:name -> 17;
+ 9:type -> 18;
+ 9:scpe -> 1;
+ 9:chan -> 19;
+ 9:init -> 20;
+ 9:size -> 13;
+ 10 [label = "{10 | {statement_list | 0:@21 | 1:@22 | 2:@23 | 3:@24}}"];
+
+ 11 [label = "{11 | {integer_type | name  | size  | algn:64 | prec:64 | sign:unsigned | min }}"];
+
+ 11:name -> 26;
+ 11:size -> 27;
+ 11:min -> 28;
+ 12 [label = "{12 | {type_decl | name }}"];
+
+ 12:name -> 30;
+ 13 [label = "{13 | {integer_cst | type }}"];
+
+ 13:type -> 11;
+ 14 [label = "{14 | {integer_cst | type  | high:-1}}"];
+
+ 14:type -> 7;
+ 15 [label = "{15 | {integer_cst | type }}"];
+
+ 15:type -> 7;
+ 16 [label = "{16 | {type_decl | name }}"];
+
+ 16:name -> 31;
+ 17 [label = "{17 | {identifier_node | strg:a}}"];
+
+ 18 [label = "{18 | {integer_type | name  | size  | algn:32 | prec:32 | sign:unsigned | min }}"];
+
+ 18:name -> 32;
+ 18:size -> 13;
+ 18:min -> 33;
+ 19 [label = "{19 | {var_decl | name  | type  | scpe  | chan  | init  | size  | algn:32}}"];
+
+ 19:name -> 35;
+ 19:type -> 36;
+ 19:scpe -> 1;
+ 19:chan -> 37;
+ 19:init -> 38;
+ 19:size -> 13;
+ 20 [label = "{20 | {integer_cst | type }}"];
+
+ 20:type -> 18;
+ 21 [label = "{21 | {decl_expr}}"];
+
+ 22 [label = "{22 | {decl_expr}}"];
+
+ 23 [label = "{23 | {decl_expr}}"];
+
+ 24 [label = "{24 | {call_expr | type  | fn  | 0:@40 | 1:@9 | 2:@41}}"];
+
+ 24:type -> 7;
+ 24:fn -> 39;
+ 25 [label = "{25 | {return_expr | type }}"];
+
+ 25:type -> 8;
+ 26 [label = "{26 | {identifier_node | strg:bit_size_type}}"];
+
+ 27 [label = "{27 | {integer_cst | type }}"];
+
+ 27:type -> 11;
+ 28 [label = "{28 | {integer_cst | type }}"];
+
+ 28:type -> 11;
+ 29 [label = "{29 | {integer_cst | type }}"];
+
+ 29:type -> 11;
+ 30 [label = "{30 | {identifier_node | strg:int}}"];
+
+ 31 [label = "{31 | {identifier_node | strg:void}}"];
+
+ 32 [label = "{32 | {type_decl | name }}"];
+
+ 32:name -> 44;
+ 33 [label = "{33 | {integer_cst | type }}"];
+
+ 33:type -> 18;
+ 34 [label = "{34 | {integer_cst | type }}"];
+
+ 34:type -> 18;
+ 35 [label = "{35 | {identifier_node | strg:d}}"];
+
+ 36 [label = "{36 | {real_type | name  | size  | algn:32}}"];
+
+ 36:name -> 45;
+ 36:size -> 13;
+ 37 [label = "{37 | {var_decl | name  | type  | scpe  | init  | size  | algn:8}}"];
+
+ 37:name -> 46;
+ 37:type -> 47;
+ 37:scpe -> 1;
+ 37:init -> 48;
+ 37:size -> 49;
+ 38 [label = "{38 | {real_cst | type }}"];
+
+ 38:type -> 36;
+ 39 [label = "{39 | {addr_expr | type  | op}}"];
+
+ 39:type -> 50;
+ 40 [label = "{40 | {nop_expr | type  | op}}"];
+
+ 40:type -> 52;
+ 41 [label = "{41 | {nop_expr | type  | op}}"];
+
+ 41:type -> 54;
+ 42 [label = "{42 | {addr_expr | type  | op}}"];
+
+ 42:type -> 55;
+ 43 [label = "{43 | {modify_expr | type  | op | 0:@56 | op}}"];
+
+ 43:type -> 7;
+ 44 [label = "{44 | {identifier_node | strg:unsigned | int}}"];
+
+ 45 [label = "{45 | {type_decl | name }}"];
+
+ 45:name -> 58;
+ 46 [label = "{46 | {identifier_node | strg:name}}"];
+
+ 47 [label = "{47 | {array_type | size  | algn:8 | elts }}"];
+
+ 47:size -> 49;
+ 47:elts -> 59;
+ 48 [label = "{48 | {string_cst | type  | strg:This | is | a | string.}}"];
+
+ 48:type -> 47;
+ 49 [label = "{49 | {integer_cst | type }}"];
+
+ 49:type -> 11;
+ 50 [label = "{50 | {pointer_type | size  | algn:64}}"];
+
+ 50:size -> 27;
+ 51 [label = "{51 | {function_decl | name  | type  | body:undefined}}"];
+
+ 51:name -> 62;
+ 51:type -> 61;
+ 52 [label = "{52 | {pointer_type | qual:r | unql  | size  | algn:64}}"];
+
+ 52:unql -> 63;
+ 52:size -> 27;
+ 53 [label = "{53 | {addr_expr | type  | op}}"];
+
+ 53:type -> 65;
+ 54 [label = "{54 | {real_type | name  | size  | algn:64}}"];
+
+ 54:name -> 67;
+ 54:size -> 27;
+ 55 [label = "{55 | {pointer_type | size  | algn:64}}"];
+
+ 55:size -> 27;
+ 56 [label = "{56 | {result_decl | type  | scpe  | size }}"];
+
+ 56:type -> 7;
+ 56:scpe -> 1;
+ 56:size -> 13;
+ 57 [label = "{57 | {integer_cst | type }}"];
+
+ 57:type -> 7;
+ 58 [label = "{58 | {identifier_node | strg:float}}"];
+
+ 59 [label = "{59 | {integer_type | name  | size  | algn:8 | prec:8 | sign:signed | min }}"];
+
+ 59:name -> 68;
+ 59:size -> 6;
+ 59:min -> 69;
+ 60 [label = "{60 | {integer_type | size  | algn:64 | prec:64 | sign:signed | min }}"];
+
+ 60:size -> 27;
+ 60:min -> 71;
+ 61 [label = "{61 | {function_type | size  | algn:8 | retn }}"];
+
+ 61:size -> 6;
+ 61:retn -> 7;
+ 62 [label = "{62 | {identifier_node | strg:printf}}"];
+
+ 63 [label = "{63 | {pointer_type | size  | algn:64}}"];
+
+ 63:size -> 27;
+ 64 [label = "{64 | {integer_type | qual:c | name  | unql  | size  | algn:8 | prec:8 | sign:signed | min }}"];
+
+ 64:name -> 68;
+ 64:unql -> 59;
+ 64:size -> 6;
+ 64:min -> 69;
+ 65 [label = "{65 | {pointer_type | size  | algn:64}}"];
+
+ 65:size -> 27;
+ 66 [label = "{66 | {string_cst | type  | strg:a=%d, | d=%f, | name=%s}}"];
+
+ 66:type -> 74;
+ 67 [label = "{67 | {type_decl | name }}"];
+
+ 67:name -> 75;
+ 68 [label = "{68 | {type_decl | name }}"];
+
+ 68:name -> 76;
+ 69 [label = "{69 | {integer_cst | type  | high:-1}}"];
+
+ 69:type -> 59;
+ 70 [label = "{70 | {integer_cst | type }}"];
+
+ 70:type -> 59;
+ 71 [label = "{71 | {integer_cst | type }}"];
+
+ 71:type -> 77;
+ 72 [label = "{72 | {integer_cst | type }}"];
+
+ 72:type -> 77;
+ 73 [label = "{73 | {tree_list}}"];
+
+ 74 [label = "{74 | {array_type | size  | algn:8 | elts }}"];
+
+ 74:size -> 78;
+ 74:elts -> 59;
+ 75 [label = "{75 | {identifier_node | strg:double}}"];
+
+ 76 [label = "{76 | {identifier_node | strg:char}}"];
+
+ 77 [label = "{77 | {integer_type | name  | size  | algn:64 | prec:64 | sign:unsigned | min }}"];
+
+ 77:name -> 80;
+ 77:size -> 27;
+ 77:min -> 81;
+ 78 [label = "{78 | {integer_cst | type }}"];
+
+ 78:type -> 11;
+ 79 [label = "{79 | {integer_type | size  | algn:64 | prec:64 | sign:signed | min }}"];
+
+ 79:size -> 27;
+ 79:min -> 71;
+ 80 [label = "{80 | {type_decl | name }}"];
+
+ 80:name -> 84;
+ 81 [label = "{81 | {integer_cst | type }}"];
+
+ 81:type -> 85;
+ 82 [label = "{82 | {integer_cst | type  | high:-1}}"];
+
+ 82:type -> 77;
+ 83 [label = "{83 | {integer_cst | type }}"];
+
+ 83:type -> 77;
+ 84 [label = "{84 | {identifier_node | strg:long | unsigned | int}}"];
+
+ 85 [label = "{85 | {integer_type | name  | size  | algn:64 | prec:64 | sign:unsigned | min }}"];
+
+ 85:name -> 80;
+ 85:size -> 27;
+ 85:min -> 81;
+ 86 [label = "{86 | {integer_cst | type }}"];
+
+ 86:type -> 85;
+}
