@@ -37,3 +37,7 @@ c_genericize
 ```
 
 ![](05.gimple/res/5-7.png)
+
+#6.GIMPLE优化
+execute_one_pass
+execute_ipa_pass_list
