@@ -35,3 +35,5 @@ c_genericize
 ------------gimplify_stmt
 --------------gimplify_expr
 ```
+
+![](05.gimple/res/5-7.png)
