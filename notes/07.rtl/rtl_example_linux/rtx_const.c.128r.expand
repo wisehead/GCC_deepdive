@@ -1,0 +1,106 @@
+
+;; Function rtx_const (rtx_const)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+
+(insn 2 4 3 2 rtx_const.c:1 (set (mem/c/i:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 i+0 S4 A32])
+        (reg:SI 5 di [ i ])) -1 (nil))
+
+(note 3 2 5 2 NOTE_INSN_FUNCTION_BEG)
+
+(note 5 3 6 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+
+(insn 6 5 7 3 rtx_const.c:2 (set (mem/f/c/i:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 name+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <string_cst 0x7facbc0e7b80>)) -1 (nil))
+
+(insn 7 6 8 3 rtx_const.c:3 (set (mem/f/c/i:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 title+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2] <string_cst 0x7facbc0e7cc0>)) -1 (nil))
+
+(code_label 8 7 9 4 2 ("AGAIN") [1 uses])
+
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+
+(insn 10 9 11 4 rtx_const.c:6 (set (reg:CCGC 17 flags)
+        (compare:CCGC (mem/c/i:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 i+0 S4 A32])
+            (const_int 10 [0xa]))) -1 (nil))
+
+(jump_insn 11 10 12 4 rtx_const.c:6 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0x0]))
+            (label_ref 16)
+            (pc))) -1 (nil))
+
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+
+(insn 13 12 14 5 rtx_const.c:7 (parallel [
+            (set (mem/c/i:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                        (const_int -20 [0xffffffffffffffec])) [0 i+0 S4 A32])
+                (ashift:SI (mem/c/i:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                            (const_int -20 [0xffffffffffffffec])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) -1 (nil))
+
+(jump_insn 14 13 15 5 rtx_const.c:8 (set (pc)
+        (label_ref 8)) -1 (nil))
+
+(barrier 15 14 16)
+
+(code_label 16 15 17 6 3 "" [1 uses])
+
+(note 17 16 18 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+
+(insn 18 17 19 6 rtx_const.c:10 (set (reg:SI 58 [ D.1595 ])
+        (mem/c/i:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 i+0 S4 A32])) -1 (nil))
+
+(insn 19 18 20 6 rtx_const.c:10 (set (reg:SI 59 [ <result> ])
+        (reg:SI 58 [ D.1595 ])) -1 (nil))
+
+(jump_insn 20 19 21 6 rtx_const.c:10 (set (pc)
+        (label_ref 22)) -1 (nil))
+
+(barrier 21 20 30)
+
+(note 30 21 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+(insn 24 30 25 7 rtx_const.c:11 (clobber (reg/i:SI 0 ax)) -1 (nil))
+
+(insn 25 24 26 7 rtx_const.c:11 (clobber (reg:SI 59 [ <result> ])) -1 (nil))
+
+(jump_insn 26 25 27 7 rtx_const.c:11 (set (pc)
+        (label_ref 28)) -1 (nil))
+
+(barrier 27 26 22)
+
+(code_label 22 27 31 8 1 "" [1 uses])
+
+(note 31 22 23 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+
+(insn 23 31 28 8 rtx_const.c:11 (set (reg/i:SI 0 ax)
+        (reg:SI 59 [ <result> ])) -1 (nil))
+
+(code_label 28 23 32 9 4 "" [1 uses])
+
+(note 32 28 29 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+
+(insn 29 32 0 9 rtx_const.c:11 (use (reg/i:SI 0 ax)) -1 (nil))

@@ -1,0 +1,202 @@
+
+;; Function rtx_const (rtx_const, funcdef_no=0, decl_uid=1973, cgraph_uid=0, symbol_order=0)
+
+
+********** Local #1: **********
+
+	   Spilling non-eliminable hard regs: 6
+New elimination table:
+Can't eliminate 16 to 7 (offset=16, prev_offset=0)
+Can eliminate 16 to 6 (offset=16, prev_offset=0)
+Can't eliminate 20 to 7 (offset=0, prev_offset=0)
+Can eliminate 20 to 6 (offset=0, prev_offset=0)
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+          alt=1,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 1 in insn 2:  (0) m  (1) re {*movsi_internal}
+            alt=2: Bad operand -- refuse
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=3,overall=609,losers=1,rld_nregs=1
+          alt=4,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 4 in insn 6:  (0) r  (1) i {*movdi_internal}
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=2: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=3,overall=609,losers=1,rld_nregs=1
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 7:  (0) m  (1) re {*movdi_internal}
+            alt=2: Bad operand -- refuse
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=3,overall=609,losers=1,rld_nregs=1
+          alt=4,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 4 in insn 8:  (0) r  (1) i {*movdi_internal}
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=2: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=3,overall=609,losers=1,rld_nregs=1
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 9:  (0) m  (1) re {*movdi_internal}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 12:  (0) rm  (1) re {*cmpsi_1}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 15:  (0) =rm  (1) 0  (2) cI {*ashlsi3_1}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 20:  (0) =r  (1) g {*movsi_internal}
+	   Spilling non-eliminable hard regs: 6
+
+********** Inheritance #1: **********
+
+EBB 2
+EBB 3 4
+EBB 5
+
+********** Pseudo live ranges #1: **********
+
+  BB 5
+   Insn 28: point = 0, n_alt = -1
+   Insn 27: point = 0, n_alt = -2
+   Insn 23: point = 1, n_alt = -2
+   Insn 20: point = 3, n_alt = 0
+  BB 3
+   Insn 13: point = 4, n_alt = -1
+   Insn 12: point = 4, n_alt = 0
+  BB 4
+   Insn 30: point = 4, n_alt = -1
+   Insn 15: point = 4, n_alt = 0
+  BB 2
+   Insn 9: point = 4, n_alt = 5
+   Insn 8: point = 5, n_alt = 4
+   Insn 7: point = 6, n_alt = 5
+   Insn 6: point = 7, n_alt = 4
+   Insn 2: point = 8, n_alt = 1
+ r87: [2..3]
+ r88: [0..1]
+ r89: [6..7]
+ r90: [4..5]
+Compressing live ranges: from 8 to 8 - 100%
+Ranges after the compression:
+ r87: [2..3]
+ r88: [0..1]
+ r89: [6..7]
+ r90: [4..5]
+
+********** Assignment #1: **********
+
+
+********** Undoing inheritance #1: **********
+
+
+********** Local #2: **********
+
+	   Spilling non-eliminable hard regs: 6
+	   Spilling non-eliminable hard regs: 6
+New elimination table:
+Can't eliminate 16 to 7 (offset=16, prev_offset=0)
+Can eliminate 16 to 6 (offset=16, prev_offset=16)
+Can't eliminate 20 to 7 (offset=0, prev_offset=0)
+Can eliminate 20 to 6 (offset=0, prev_offset=0)
+changing reg in insn 20
+changing reg in insn 23
+changing reg in insn 23
+changing reg in insn 27
+changing reg in insn 6
+changing reg in insn 7
+changing reg in insn 8
+changing reg in insn 9
+deleting insn with uid = 23.
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+rtx_const
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 4 [si] 5 [di] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [xmm0] 22 [xmm1] 23 [xmm2] 24 [xmm3] 25 [xmm4] 26 [xmm5] 27 [xmm6] 28 [xmm7] 29 [mm0] 30 [mm1] 31 [mm2] 32 [mm3] 33 [mm4] 34 [mm5] 35 [mm6] 36 [mm7] 37 [r8] 38 [r9] 39 [r10] 40 [r11] 45 [xmm8] 46 [xmm9] 47 [xmm10] 48 [xmm11] 49 [xmm12] 50 [xmm13] 51 [xmm14] 52 [xmm15] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	
+;;  regular block artificial uses 	 6 [bp] 7 [sp]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 4 [si] 5 [di] 6 [bp] 7 [sp] 20 [frame] 21 [xmm0] 22 [xmm1] 23 [xmm2] 24 [xmm3] 25 [xmm4] 26 [xmm5] 27 [xmm6] 28 [xmm7] 37 [r8] 38 [r9]
+;;  exit block uses 	 0 [ax] 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 0 [ax] 5 [di] 6 [bp] 17 [flags]
+;;  ref usage 	r0={5d,5u} r1={1d} r2={1d} r4={1d} r5={1d,1u} r6={1d,12u} r7={1d,5u} r17={2d,1u} r20={1d,1u} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r37={1d} r38={1d} 
+;;    total ref usage 49{24d,25u,0e} in 12{12 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                (const_int -20 [0xffffffffffffffec])) [2 i+0 S4 A32])
+        (reg:SI 5 di [ i ])) "rtx_const.c":1 86 {*movsi_internal}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 0 ax [89])
+        (symbol_ref/f:DI ("*lC0") [flags 0x2] <var_decl 0x14b99e1b0 *lC0>)) "rtx_const.c":2 85 {*movdi_internal}
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [1 name+0 S8 A64])
+        (reg/f:DI 0 ax [89])) "rtx_const.c":2 85 {*movdi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 0 ax [90])
+        (symbol_ref/f:DI ("*lC1") [flags 0x2] <var_decl 0x14b99e240 *lC1>)) "rtx_const.c":3 85 {*movdi_internal}
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -16 [0xfffffffffffffff0])) [1 title+0 S8 A64])
+        (reg/f:DI 0 ax [90])) "rtx_const.c":3 85 {*movdi_internal}
+     (nil))
+(code_label 10 9 11 3 2 ("AGAIN") [1 uses])
+(note 11 10 12 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 13 3 (set (reg:CCGC 17 flags)
+        (compare:CCGC (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                    (const_int -20 [0xffffffffffffffec])) [2 i+0 S4 A32])
+            (const_int 10 [0xa]))) "rtx_const.c":6 11 {*cmpsi_1}
+     (nil))
+(jump_insn 13 12 14 3 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "rtx_const.c":6 682 {*jcc}
+     (nil)
+ -> 18)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 30 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                        (const_int -20 [0xffffffffffffffec])) [2 i+0 S4 A32])
+                (ashift:SI (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                            (const_int -20 [0xffffffffffffffec])) [2 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "rtx_const.c":7 550 {*ashlsi3_1}
+     (nil))
+(jump_insn 30 15 31 4 (set (pc)
+        (label_ref 10)) "rtx_const.c":8 683 {jump}
+     (nil)
+ -> 10)
+(barrier 31 30 18)
+(code_label 18 31 19 5 3 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 27 5 (set (reg:SI 0 ax [orig:87 _6 ] [87])
+        (mem/c:SI (plus:DI (reg/f:DI 6 bp)
+                (const_int -20 [0xffffffffffffffec])) [2 i+0 S4 A32])) "rtx_const.c":10 86 {*movsi_internal}
+     (nil))
+(insn 27 20 28 5 (set (reg/i:SI 0 ax)
+        (reg:SI 0 ax [orig:88 <retval> ] [88])) "rtx_const.c":11 86 {*movsi_internal}
+     (nil))
+(insn 28 27 32 5 (use (reg/i:SI 0 ax)) "rtx_const.c":11 -1
+     (nil))
+(note 32 28 0 NOTE_INSN_DELETED)
