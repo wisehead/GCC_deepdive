@@ -1,0 +1,236 @@
+[1] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:1, 1
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[2] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:1, 5
+@1      identifier_node  strg: f        lngt: 1        addr: 7ff551bb93c0 
+[3] CPP_OPEN_PAREN   C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:1, 6
+[4] CPP_CLOSE_PAREN  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:1, 7
+[5] CPP_OPEN_BRACE   C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:1, 9
+[6] CPP_KEYWORD      C_ID_NONE  RID_RETURN   PRAGMA_NONE   frame.c:2, 5
+@1      identifier_node  strg: return   lngt: 6        addr: 7ff551af8300 
+[7] CPP_NUMBER       C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:2, 12
+@1      integer_cst      type: @2       low : 1        addr: 7ff551b06510 
+@2      integer_type     name: @3       size: @4       algn: 32      
+                         prec: 32       sign: signed   min : @5      
+                         max : @6       addr: 7ff551af9540 
+@3      type_decl        name: @7       type: @2       srcp: <built-in>:0      
+                         addr: 7ff551af9c00 
+@4      integer_cst      type: @8       low : 32       addr: 7ff551ae9a50 
+@5      integer_cst      type: @2       high: -1       low : -2147483648 
+                         addr: 7ff551ae99c0 
+@6      integer_cst      type: @2       low : 2147483647  addr: 7ff551ae99f0 
+@7      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+@8      integer_type     name: @9       size: @10      algn: 64      
+                         prec: 64       sign: unsigned min : @11     
+                         max : @12      addr: 7ff551af90c0 
+@9      identifier_node  strg: bit_size_type           lngt: 13      
+                         addr: 7ff551af8d80 
+@10     integer_cst      type: @8       low : 64       addr: 7ff551ae9b40 
+@11     integer_cst      type: @8       low : 0        addr: 7ff551b06390 
+@12     integer_cst      type: @8       low : -1       addr: 7ff551b06330 
+[8] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:2, 13
+[9] CPP_CLOSE_BRACE  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:3, 1
+[10] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:5, 1
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[11] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:5, 5
+@1      identifier_node  strg: g        lngt: 1        addr: 7ff551a21060 
+[12] CPP_OPEN_PAREN   C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:5, 6
+[13] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:5, 7
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[14] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:5, 11
+@1      identifier_node  strg: i        lngt: 1        addr: 7ff551a210c0 
+[15] CPP_COMMA        C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:5, 12
+[16] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:5, 14
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[17] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:5, 18
+@1      identifier_node  strg: j        lngt: 1        addr: 7ff551a21120 
+[18] CPP_CLOSE_PAREN  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:5, 19
+[19] CPP_OPEN_BRACE   C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:5, 21
+[20] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:6, 5
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[21] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:6, 9
+@1      identifier_node  strg: l1       lngt: 2        addr: 7ff551a21180 
+[22] CPP_EQ           C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:6, 12
+[23] CPP_NUMBER       C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:6, 14
+@1      integer_cst      type: @2       low : 1        addr: 7ff551b06510 
+@2      integer_type     name: @3       size: @4       algn: 32      
+                         prec: 32       sign: signed   min : @5      
+                         max : @6       addr: 7ff551af9540 
+@3      type_decl        name: @7       type: @2       srcp: <built-in>:0      
+                         addr: 7ff551af9c00 
+@4      integer_cst      type: @8       low : 32       addr: 7ff551ae9a50 
+@5      integer_cst      type: @2       high: -1       low : -2147483648 
+                         addr: 7ff551ae99c0 
+@6      integer_cst      type: @2       low : 2147483647  addr: 7ff551ae99f0 
+@7      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+@8      integer_type     name: @9       size: @10      algn: 64      
+                         prec: 64       sign: unsigned min : @11     
+                         max : @12      addr: 7ff551af90c0 
+@9      identifier_node  strg: bit_size_type           lngt: 13      
+                         addr: 7ff551af8d80 
+@10     integer_cst      type: @8       low : 64       addr: 7ff551ae9b40 
+@11     integer_cst      type: @8       low : 0        addr: 7ff551b06390 
+@12     integer_cst      type: @8       low : -1       addr: 7ff551b06330 
+[24] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:6, 15
+[25] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:7, 5
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[26] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:7, 9
+@1      identifier_node  strg: l2       lngt: 2        addr: 7ff551a211e0 
+[27] CPP_EQ           C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:7, 12
+[28] CPP_NUMBER       C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:7, 14
+@1      integer_cst      type: @2       low : 2        addr: 7ff551b1f720 
+@2      integer_type     name: @3       size: @4       algn: 32      
+                         prec: 32       sign: signed   min : @5      
+                         max : @6       addr: 7ff551af9540 
+@3      type_decl        name: @7       type: @2       srcp: <built-in>:0      
+                         addr: 7ff551af9c00 
+@4      integer_cst      type: @8       low : 32       addr: 7ff551ae9a50 
+@5      integer_cst      type: @2       high: -1       low : -2147483648 
+                         addr: 7ff551ae99c0 
+@6      integer_cst      type: @2       low : 2147483647  addr: 7ff551ae99f0 
+@7      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+@8      integer_type     name: @9       size: @10      algn: 64      
+                         prec: 64       sign: unsigned min : @11     
+                         max : @12      addr: 7ff551af90c0 
+@9      identifier_node  strg: bit_size_type           lngt: 13      
+                         addr: 7ff551af8d80 
+@10     integer_cst      type: @8       low : 64       addr: 7ff551ae9b40 
+@11     integer_cst      type: @8       low : 0        addr: 7ff551b06390 
+@12     integer_cst      type: @8       low : -1       addr: 7ff551b06330 
+[29] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:7, 15
+[30] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:8, 5
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[31] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:8, 9
+@1      identifier_node  strg: l3       lngt: 2        addr: 7ff551a21240 
+[32] CPP_EQ           C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:8, 12
+[33] CPP_NUMBER       C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:8, 14
+@1      integer_cst      type: @2       low : 3        addr: 7ff551b1f780 
+@2      integer_type     name: @3       size: @4       algn: 32      
+                         prec: 32       sign: signed   min : @5      
+                         max : @6       addr: 7ff551af9540 
+@3      type_decl        name: @7       type: @2       srcp: <built-in>:0      
+                         addr: 7ff551af9c00 
+@4      integer_cst      type: @8       low : 32       addr: 7ff551ae9a50 
+@5      integer_cst      type: @2       high: -1       low : -2147483648 
+                         addr: 7ff551ae99c0 
+@6      integer_cst      type: @2       low : 2147483647  addr: 7ff551ae99f0 
+@7      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+@8      integer_type     name: @9       size: @10      algn: 64      
+                         prec: 64       sign: unsigned min : @11     
+                         max : @12      addr: 7ff551af90c0 
+@9      identifier_node  strg: bit_size_type           lngt: 13      
+                         addr: 7ff551af8d80 
+@10     integer_cst      type: @8       low : 64       addr: 7ff551ae9b40 
+@11     integer_cst      type: @8       low : 0        addr: 7ff551b06390 
+@12     integer_cst      type: @8       low : -1       addr: 7ff551b06330 
+[34] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:8, 15
+[35] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:9, 5
+@1      identifier_node  strg: l3       lngt: 2        addr: 7ff551a21240 
+[36] CPP_EQ           C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:9, 8
+[37] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:9, 10
+@1      identifier_node  strg: l2       lngt: 2        addr: 7ff551a211e0 
+[38] CPP_PLUS         C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:9, 13
+[39] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:9, 15
+@1      identifier_node  strg: l1       lngt: 2        addr: 7ff551a21180 
+[40] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:9, 17
+[41] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:10, 5
+@1      identifier_node  strg: l3       lngt: 2        addr: 7ff551a21240 
+[42] CPP_EQ           C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:10, 8
+[43] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:10, 10
+@1      identifier_node  strg: i        lngt: 1        addr: 7ff551a210c0 
+[44] CPP_MULT         C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:10, 11
+[45] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:10, 12
+@1      identifier_node  strg: l3       lngt: 2        addr: 7ff551a21240 
+[46] CPP_PLUS         C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:10, 15
+[47] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:10, 17
+@1      identifier_node  strg: j        lngt: 1        addr: 7ff551a21120 
+[48] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:10, 18
+[49] CPP_KEYWORD      C_ID_NONE  RID_RETURN   PRAGMA_NONE   frame.c:11, 5
+@1      identifier_node  strg: return   lngt: 6        addr: 7ff551af8300 
+[50] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:11, 12
+@1      identifier_node  strg: l3       lngt: 2        addr: 7ff551a21240 
+[51] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:11, 14
+[52] CPP_CLOSE_BRACE  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:12, 1
+[53] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:14, 1
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[54] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:14, 5
+@1      identifier_node  strg: main     lngt: 4        addr: 7ff551a04ae0 
+[55] CPP_OPEN_PAREN   C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:14, 9
+[56] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:14, 10
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[57] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:14, 14
+@1      identifier_node  strg: argc     lngt: 4        addr: 7ff551a21360 
+[58] CPP_COMMA        C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:14, 18
+[59] CPP_KEYWORD      C_ID_NONE  RID_CHAR     PRAGMA_NONE   frame.c:14, 20
+@1      identifier_node  strg: char     lngt: 4        addr: 7ff551af7d20 
+[60] CPP_MULT         C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:14, 25
+[61] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:14, 26
+@1      identifier_node  strg: argv     lngt: 4        addr: 7ff551a213c0 
+[62] CPP_OPEN_SQUARE  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:14, 30
+[63] CPP_CLOSE_SQUARE C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:14, 31
+[64] CPP_CLOSE_PAREN  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:14, 32
+[65] CPP_OPEN_BRACE   C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:14, 34
+[66] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:15, 5
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[67] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:15, 9
+@1      identifier_node  strg: i        lngt: 1        addr: 7ff551a210c0 
+[68] CPP_COMMA        C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:15, 10
+[69] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:15, 12
+@1      identifier_node  strg: j        lngt: 1        addr: 7ff551a21120 
+[70] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:15, 13
+[71] CPP_KEYWORD      C_ID_NONE  RID_INT      PRAGMA_NONE   frame.c:16, 5
+@1      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+[72] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:16, 9
+@1      identifier_node  strg: k        lngt: 1        addr: 7ff551a21420 
+[73] CPP_EQ           C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:16, 11
+[74] CPP_NUMBER       C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:16, 13
+@1      integer_cst      type: @2       low : 2        addr: 7ff551b1f720 
+@2      integer_type     name: @3       size: @4       algn: 32      
+                         prec: 32       sign: signed   min : @5      
+                         max : @6       addr: 7ff551af9540 
+@3      type_decl        name: @7       type: @2       srcp: <built-in>:0      
+                         addr: 7ff551af9c00 
+@4      integer_cst      type: @8       low : 32       addr: 7ff551ae9a50 
+@5      integer_cst      type: @2       high: -1       low : -2147483648 
+                         addr: 7ff551ae99c0 
+@6      integer_cst      type: @2       low : 2147483647  addr: 7ff551ae99f0 
+@7      identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+@8      integer_type     name: @9       size: @10      algn: 64      
+                         prec: 64       sign: unsigned min : @11     
+                         max : @12      addr: 7ff551af90c0 
+@9      identifier_node  strg: bit_size_type           lngt: 13      
+                         addr: 7ff551af8d80 
+@10     integer_cst      type: @8       low : 64       addr: 7ff551ae9b40 
+@11     integer_cst      type: @8       low : 0        addr: 7ff551b06390 
+@12     integer_cst      type: @8       low : -1       addr: 7ff551b06330 
+[75] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:16, 14
+[76] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:17, 5
+@1      identifier_node  strg: i        lngt: 1        addr: 7ff551a210c0 
+[77] CPP_EQ           C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:17, 7
+[78] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:17, 9
+@1      identifier_node  strg: f        lngt: 1        addr: 7ff551bb93c0 
+[79] CPP_OPEN_PAREN   C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:17, 10
+[80] CPP_CLOSE_PAREN  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:17, 11
+[81] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:17, 12
+[82] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:18, 5
+@1      identifier_node  strg: j        lngt: 1        addr: 7ff551a21120 
+[83] CPP_EQ           C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:18, 7
+[84] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:18, 9
+@1      identifier_node  strg: g        lngt: 1        addr: 7ff551a21060 
+[85] CPP_OPEN_PAREN   C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:18, 10
+[86] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:18, 11
+@1      identifier_node  strg: i        lngt: 1        addr: 7ff551a210c0 
+[87] CPP_COMMA        C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:18, 12
+[88] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:18, 13
+@1      identifier_node  strg: k        lngt: 1        addr: 7ff551a21420 
+[89] CPP_CLOSE_PAREN  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:18, 14
+[90] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:18, 15
+[91] CPP_KEYWORD      C_ID_NONE  RID_RETURN   PRAGMA_NONE   frame.c:19, 5
+@1      identifier_node  strg: return   lngt: 6        addr: 7ff551af8300 
+[92] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:19, 12
+@1      identifier_node  strg: i        lngt: 1        addr: 7ff551a210c0 
+[93] CPP_MULT         C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:19, 13
+[94] CPP_NAME         C_ID_ID    RID_MAX      PRAGMA_NONE   frame.c:19, 14
+@1      identifier_node  strg: j        lngt: 1        addr: 7ff551a21120 
+[95] CPP_SEMICOLON    C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:19, 15
+[96] CPP_CLOSE_BRACE  C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:20, 1
+[97] CPP_EOF          C_ID_NONE  RID_MAX      PRAGMA_NONE   frame.c:20, 0

@@ -1,0 +1,84 @@
+@1      function_decl    name: @2       type: @3       srcp: frame.c:5      
+                         args: @4       link: extern   body: @5      
+                         addr: 7ff551a0ae00 
+@2      identifier_node  strg: g        lngt: 1        addr: 7ff551a21060 
+@3      function_type    size: @6       algn: 8        retn: @7      
+                         prms: @8       addr: 7ff551a0b540 
+@4      parm_decl        name: @9       type: @7       scpe: @1      
+                         srcp: frame.c:5               chan: @10     
+                         argt: @7       size: @11      algn: 32      
+                         used: 1        addr: 7ff551af2510 
+@5      bind_expr        type: @12      vars: @13      body: @14     
+                         addr: 7ff551af1730 
+@6      integer_cst      type: @15      low : 8        addr: 7ff551ae97b0 
+@7      integer_type     name: @16      size: @11      algn: 32      
+                         prec: 32       sign: signed   min : @17     
+                         max : @18      addr: 7ff551af9540 
+@8      tree_list        valu: @7       chan: @19      addr: 7ff551a1f390 
+@9      identifier_node  strg: i        lngt: 1        addr: 7ff551a210c0 
+@10     parm_decl        name: @20      type: @7       scpe: @1      
+                         srcp: frame.c:5               argt: @7      
+                         size: @11      algn: 32       used: 1       
+                         addr: 7ff551af25a0 
+@11     integer_cst      type: @15      low : 32       addr: 7ff551ae9a50 
+@12     void_type        name: @21      algn: 8        addr: 7ff551b083c0 
+@13     var_decl         name: @22      type: @7       scpe: @1      
+                         srcp: frame.c:6               chan: @23     
+                         init: @24      size: @11      algn: 32      
+                         used: 1        addr: 7ff551bbf780 
+@14     statement_list   0   : @25      1   : @26      2   : @27     
+                         3   : @28      4   : @29      5   : @30     
+                         addr: 7ff551a1f2d0 
+@15     integer_type     name: @31      size: @32      algn: 64      
+                         prec: 64       sign: unsigned min : @33     
+                         max : @34      addr: 7ff551af90c0 
+@16     type_decl        name: @35      type: @7       srcp: <built-in>:0      
+                         addr: 7ff551af9c00 
+@17     integer_cst      type: @7       high: -1       low : -2147483648 
+                         addr: 7ff551ae99c0 
+@18     integer_cst      type: @7       low : 2147483647  addr: 7ff551ae99f0 
+@19     tree_list        valu: @7       chan: @36      addr: 7ff551a1f360 
+@20     identifier_node  strg: j        lngt: 1        addr: 7ff551a21120 
+@21     type_decl        name: @37      type: @12      srcp: <built-in>:0      
+                         addr: 7ff551b11000 
+@22     identifier_node  strg: l1       lngt: 2        addr: 7ff551a21180 
+@23     var_decl         name: @38      type: @7       scpe: @1      
+                         srcp: frame.c:7               chan: @39     
+                         init: @40      size: @11      algn: 32      
+                         used: 1        addr: 7ff551bbf820 
+@24     integer_cst      type: @7       low : 1        addr: 7ff551b06510 
+@25     decl_expr        type: @12      addr: 7ff557aad2c0 
+@26     decl_expr        type: @12      addr: 7ff557aad300 
+@27     decl_expr        type: @12      addr: 7ff557aad340 
+@28     modify_expr      type: @7       op 0: @39      op 1: @41     
+                         addr: 7ff557aad3c0 
+@29     modify_expr      type: @7       op 0: @39      op 1: @42     
+                         addr: 7ff557aad480 
+@30     return_expr      type: @12      expr: @43      addr: 7ff557aad500 
+@31     identifier_node  strg: bit_size_type           lngt: 13      
+                         addr: 7ff551af8d80 
+@32     integer_cst      type: @15      low : 64       addr: 7ff551ae9b40 
+@33     integer_cst      type: @15      low : 0        addr: 7ff551b06390 
+@34     integer_cst      type: @15      low : -1       addr: 7ff551b06330 
+@35     identifier_node  strg: int      lngt: 3        addr: 7ff551af81e0 
+@36     tree_list        valu: @12      addr: 7ff551b069c0 
+@37     identifier_node  strg: void     lngt: 4        addr: 7ff551af8720 
+@38     identifier_node  strg: l2       lngt: 2        addr: 7ff551a211e0 
+@39     var_decl         name: @44      type: @7       scpe: @1      
+                         srcp: frame.c:8               init: @45     
+                         size: @11      algn: 32       used: 1       
+                         addr: 7ff551bbf8c0 
+@40     integer_cst      type: @7       low : 2        addr: 7ff551b1f720 
+@41     plus_expr        type: @7       op 0: @23      op 1: @13     
+                         addr: 7ff557aad380 
+@42     plus_expr        type: @7       op 0: @46      op 1: @10     
+                         addr: 7ff557aad440 
+@43     modify_expr      type: @7       op 0: @47      op 1: @39     
+                         addr: 7ff557aad4c0 
+@44     identifier_node  strg: l3       lngt: 2        addr: 7ff551a21240 
+@45     integer_cst      type: @7       low : 3        addr: 7ff551b1f780 
+@46     mult_expr        type: @7       op 0: @4       op 1: @39     
+                         addr: 7ff557aad400 
+@47     result_decl      type: @7       scpe: @1       srcp: frame.c:5      
+                         note: artificial              size: @11     
+                         algn: 32       addr: 7ff551a20080 
