@@ -1,0 +1,51 @@
+
+;; Function gimple2rtl (gimple2rtl)
+
+gimple2rtl (int a, short int b, char * p)
+{
+  int j;
+  int array[2];
+  static int static_sum;
+  int i;
+  int D.1611;
+  int D.1610;
+  int static_sum.3;
+  int static_sum.2;
+  int D.1605;
+  int i.1;
+  int D.1603;
+  int static_sum.0;
+  char D.1601;
+
+  array[0] = 0;
+  array[1] = 1;
+  static_sum = a;
+  i = global_int;
+  goto <D.1599>;
+  <D.1598>:
+  D.1601 = *p;
+  j = (int) D.1601;
+  static_sum.0 = static_sum;
+  D.1603 = static_sum.0 + j;
+  i.1 = i;
+  D.1605 = array[i.1];
+  static_sum.2 = D.1603 + D.1605;
+  static_sum = static_sum.2;
+  static_sum.3 = static_sum;
+  if (static_sum.3 > 1000) goto <D.1608>; else goto <D.1609>;
+  <D.1608>:
+  goto Label_RET;
+  <D.1609>:
+  i = i + 1;
+  <D.1599>:
+  D.1610 = (int) b;
+  if (D.1610 > i) goto <D.1598>; else goto <D.1600>;
+  <D.1600>:
+  Label_RET:
+  D.1611 = static_sum;
+  goto <D.1613>;
+  <D.1613>:
+  return D.1611;
+}
+
+

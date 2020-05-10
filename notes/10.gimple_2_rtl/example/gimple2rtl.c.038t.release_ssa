@@ -1,0 +1,63 @@
+
+;; Function gimple2rtl (gimple2rtl)
+
+Released 0 names, 0.00%
+gimple2rtl (int a, short int b, char * p)
+{
+  int j;
+  int array[2];
+  static int static_sum;
+  int i;
+  int D.1611;
+  int D.1610;
+  int static_sum.3;
+  int static_sum.2;
+  int D.1605;
+  int i.1;
+  int D.1603;
+  int static_sum.0;
+  char D.1601;
+
+<bb 2>:
+  array[0] ={v} 0;
+  array[1] ={v} 1;
+  static_sum ={v} a_2(D);
+  i_3 = global_int;
+  goto <bb 6>;
+
+<bb 3>:
+  D.1601_7 = *p_6(D);
+  j_8 = (int) D.1601_7;
+  static_sum.0_9 = static_sum;
+  D.1603_10 = static_sum.0_9 + j_8;
+  i.1_11 = i_1;
+  D.1605_12 = array[i.1_11];
+  static_sum.2_13 = D.1603_10 + D.1605_12;
+  static_sum ={v} static_sum.2_13;
+  static_sum.3_14 = static_sum;
+  if (static_sum.3_14 > 1000)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+<bb 4>:
+  goto <bb 7> (Label_RET);
+
+<bb 5>:
+  i_15 = i_1 + 1;
+
+<bb 6>:
+  # i_1 = PHI <i_3(2), i_15(5)>
+  D.1610_5 = (int) b_4(D);
+  if (D.1610_5 > i_1)
+    goto <bb 3>;
+  else
+    goto <bb 7> (Label_RET);
+
+Label_RET:
+  D.1611_16 = static_sum;
+  return D.1611_16;
+
+}
+
+

@@ -1,0 +1,37 @@
+
+;; Function gimple2rtl (null)
+;; enabled by -tree-original
+
+
+{
+  int i;
+  static int static_sum;
+  int array[2] = {0, 1};
+  void Label_RET = <<< error >>>;
+
+    int i;
+    static int static_sum;
+    int array[2] = {0, 1};
+  static_sum = a;
+  i = global_int;
+  goto <D.1599>;
+  <D.1598>:;
+  {
+    int j = (int) *p;
+
+        int j = (int) *p;
+    static_sum = (static_sum + j) + array[i];
+    if (static_sum > 1000)
+      {
+        goto Label_RET;
+      }
+  }
+  i++ ;
+  <D.1599>:;
+  if ((int) b > i) goto <D.1598>; else goto <D.1600>;
+  <D.1600>:;
+  Label_RET:;
+  return static_sum;
+}
+
+
